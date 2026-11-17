@@ -234,6 +234,7 @@ border-width: 1px;
   gap: 32px;
   width: 100%;
   max-width: 1440px;
+  align-content: start;
 }
 
 .game-card {
