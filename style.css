@@ -134,7 +134,7 @@ border-width: 1px;
   color: white;
   border: 1px solid #000;
   border-radius: 60px;
-  font-family: "Montserrat";
+  
   font-weight: 700;
   font-size: 24px;
   cursor: pointer;
@@ -240,7 +240,7 @@ border-width: 1px;
   background-color: white;
   border-radius: 30px;
   overflow: hidden;
-  text-align: center;
+  
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -257,6 +257,10 @@ border-width: 1px;
   flex-shrink: 0; /* Не сжимаем изображение */
 }
 
+.game-text {
+  padding: 8px 16px 10px 16px;
+}
+
 .game-card.small {
   height: 473px;
 }
@@ -271,7 +275,7 @@ border-width: 1px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 52.58px;
   padding: 8px 16px 10px 16px;
-  margin: 16px auto;
+  
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
@@ -291,6 +295,7 @@ border-width: 1px;
   letter-spacing: 0;
   margin-top: 16px;
   color: black;
+  padding: 8px 16px 10px 16px;
 }
 
 /*Нижний блок: мини игры*/
