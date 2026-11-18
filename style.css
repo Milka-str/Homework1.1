@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   background: #E1FF8F;
   top: 196px;
   width: auto;
-  max-width: 1440px;
+  width: 1440px;
   margin-top: auto;
 }
 
@@ -154,7 +154,7 @@ border-width: 1px;
 }
 
 .head1-star2 {
-  margin-top: 97px;
+  margin-top: 25px;
   padding-left: 63px;
   padding-bottom: 45px;
 }
@@ -199,7 +199,7 @@ border-width: 1px;
   color: white;
   padding: 80px 120px;
   width: 100%;
-  max-width: 1440px;
+  width: 1440px;
   margin-top: auto;
  
 }
@@ -220,11 +220,18 @@ border-width: 1px;
 .games-section p {
   font-family: "Montserrat";
   font-weight: 400;
-  font-style: normal;
+  
   font-size: 24px;
+  
+  margin-bottom: 72px;
+  
+}
+
+
+
+.games-title {
+  
   line-height: 32px;
-  letter-spacing: 0;
-  margin-bottom: 64px;
   
 }
 
@@ -233,16 +240,36 @@ border-width: 1px;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   width: 100%;
-  max-width: 1440px;
+  width: 1440px;
   align-content: start;
+  position: relative;
+
+  
+}
+
+.games-star1 {
+  position: absolute;
+  top: 877px;
+  left: 933px;
+  
+  
+}
+
+.games-star11 {
+  position: absolute;
+  top: 1570px;
+  left: 25px;
+}
+
+.games-star12 {
+  position: absolute;
+  top: 1622px;
+  left: 40px;
 }
 
 .game-card {
   background-color: white;
   border-radius: 30px;
-  overflow: hidden;
-  
-  cursor: pointer;
   transition: transform 0.2s ease;
 }
 
@@ -259,33 +286,35 @@ border-width: 1px;
 }
 
 .game-text {
-  padding: 8px 16px 10px 16px;
+  padding: 32px 32px 32px 32px;
 }
+
+
 
 .game-card.small {
   height: 473px;
+  width: 378px;
 }
 
 .game-card.large {
   height: 512px;
+  width: 378px;
+}
+
+.bottom-row {
+  bottom: 32px
 }
 
 .game-tag {
-  width: 108px;
-  height: 36px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 52.58px;
-  padding: 8px 16px 10px 16px;
-  
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 110%;
-  letter-spacing: 0;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 108px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 52.58px;
+    padding: 8px 16px 10px 16px;
+    font-family: "Montserrat";
+    color: black;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: center;
 }
 
 .game-title {
@@ -305,7 +334,7 @@ border-width: 1px;
     background-color: #000;
     color: white;
     padding: 80px 120px;
-    max-width: 1440px;
+    width: 1440px;
     height: 3310px;
     margin-top: auto;
      
@@ -336,7 +365,7 @@ border-width: 1px;
    display: flex;
     gap: 32px;
     width: 100%;
-    max-width: 1440px;
+    width: 1440px;
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
