@@ -198,7 +198,7 @@ border-width: 1px;
   background-color: #000;
   color: white;
   padding: 80px 120px;
-  width: 100%;
+
   width: 1440px;
   margin-top: auto;
  
@@ -239,8 +239,7 @@ border-width: 1px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  width: 100%;
-  width: 1440px;
+  
   align-content: start;
   position: relative;
 
@@ -302,7 +301,7 @@ border-width: 1px;
 }
 
 .bottom-row {
-  bottom: 32px
+  margin-top: -38px
 }
 
 .game-tag {
