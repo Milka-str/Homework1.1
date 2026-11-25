@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
 }
 
 body {
@@ -15,89 +15,20 @@ body {
   color: #000;
   display: flex;
   flex-direction: column;
-  width: 1440px;
-  margin-top: auto;
 }
 
 /* Центральный блок */
-.head1 {
-  left: 1780px;
-  background: #E1FF8F;
-  top: 196px;
-  width: auto;
-  
-}
-
-.ollhead {
-  display: flex;
-  flex-direction: row;
-    
-}
-
-.vector-star {
-    
-    height: 800;
-    display: flex;
-    flex-direction: row;
-}
-
-.head-star {
-  display: flex;
-  flex-direction: column;
-}
-
-.green-vector {
-  display: grid;
-  justify-content: end;
-  margin-left: -240px;
-}
-
-
-.vectors {
-   border-width: 1px;
-}
-
-.vector4781 {
-  width: 142;
-height: 179;
-top: 254px;
-left: 1067px;
-border-width: 1px;
-
-}
-
-.vector4788 {
-  border-right: 113px;
-  top: 468px;
-  
-}
-.vector4782 {
-  width: 219.88;
-  height: 418;
-  
- 
- 
-}
-.vector4791 {
-  width: 34;
-  height: 124;
-  top: 663px;
-  left: 1345px;
-  border-width: 1px;
-
-}
-
 .hero {
-
+  flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: 769px;
-  height: 358px;
-  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
   padding-left: 120px;
-    
-        /* top: 196px; */
-
+  padding-top: 196px;
+  width: 100%;
+  margin: 0 auto;
+  background: #E1FF8F;
 }
 
 .hero-text-1 {
@@ -106,7 +37,7 @@ border-width: 1px;
   font-size: 64px;
   line-height: 100%;
   letter-spacing: 0;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   width: 769px;
   height: 156px;
 }
@@ -119,7 +50,7 @@ border-width: 1px;
   letter-spacing: 0;
   width: 720px;
   height: 64px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .text {
@@ -130,18 +61,18 @@ border-width: 1px;
 }
 
 .cta-button {
-  width: 247px;
-  height: 66px;
+  width: 200px;
+  height: 60px;
   background-color: #000;
   color: white;
-  border: 1px solid #000;
-  border-radius: 60px;
-  
+  border: 2px solid #000;
+  border-radius: 12px;
+  font-family: "Montserrat";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.15s ease;
-  margin-top: 16px;
+  margin-top: 48px;
 }
 
 .cta-button:active {
@@ -150,37 +81,20 @@ border-width: 1px;
   border-color: #000;
 }
 
-.head1-star3 {
-  margin-top: 69px;
-  padding-left: 156px;
-}
-
-.head1-star2 {
-  margin-top: 25px;
-  padding-left: 63px;
-  padding-bottom: 45px;
-}
-.head1-star4 {
-  margin-top: 14px;
-  padding-left: 1013px;
-}
-
-.head1-star5 {
-  
-  padding-left: 948px;
-}
-
-
 /* Анимированная полоса внизу */
 .scrolling-banner {
   position: relative;
   bottom: 0;
   left: 100%;
   white-space: nowrap;
+  font-size: 24px;
+  font-weight: 700;
   display: flex;
-  align-items: flex-end;
-  animation: scrollBanner 20s linear infinite;
-   padding-top: 59px;
+  align-items: center;
+  height: 80px;
+  width: 200%;
+  animation: scrollBanner 30s linear infinite;
+  background: #E1FF8F;
 }
 
 .scrolling-banner img {
@@ -200,9 +114,12 @@ border-width: 1px;
   background-color: #000;
   color: white;
   padding: 80px 120px;
-
- 
- 
+  width: 100%;
+  max-width: 1440px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .games-section h2 {
@@ -213,63 +130,33 @@ border-width: 1px;
   line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 24px;
-  
-
-
 }
 
 .games-section p {
-  
-
-  
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
   font-size: 24px;
-  
-  margin-bottom: 72px;
-  
-}
-
-
-
-.games-title {
-  
   line-height: 32px;
-  
+  letter-spacing: 0;
+  margin-bottom: 64px;
+  text-align: center;
 }
 
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(3, 0fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  position: relative;
-  
-  
-
-  
-}
-
-.games-star1 {
-  position: absolute;
-  top: 877px;
-  left: 933px;
-  
-  
-}
-
-.games-star11 {
-  position: absolute;
-  top: 1570px;
-  left: 25px;
-}
-
-.games-star12 {
-  position: absolute;
-  top: 1622px;
-  left: 40px;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .game-card {
   background-color: white;
   border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
   transition: transform 0.2s ease;
 }
 
@@ -285,36 +172,30 @@ border-width: 1px;
   flex-shrink: 0; /* Не сжимаем изображение */
 }
 
-.game-text {
-  padding: 32px 32px 32px 32px;
-}
-
-
-
 .game-card.small {
   height: 473px;
-  width: 378px;
 }
 
 .game-card.large {
   height: 512px;
-  width: 378px;
-}
-
-.bottom-row {
-  margin-top: -38px
 }
 
 .game-tag {
-    width: 108px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 52.58px;
-    padding: 8px 16px 10px 16px;
-    font-family: "Montserrat";
-    color: black;
-    background: #F7F7F7;
-    display: flex;
-    justify-content: center;
+  width: 108px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 52.58px;
+  padding: 8px 16px 10px 16px;
+  margin: 16px auto;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-title {
@@ -325,90 +206,4 @@ border-width: 1px;
   letter-spacing: 0;
   margin-top: 16px;
   color: black;
-  padding: 8px 16px 10px 16px;
-}
-
-/*Нижний блок: мини игры*/
-
-.minigames {
-    background-color: #000;
-    color: white;
-    padding: 80px 120px;
-    
-    height: 3310px;
-    margin-top: auto;
-     
-}
-.minigames h3 {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-style: bold;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 0;
-  margin-bottom: 24px;
-}
-
-.minigames p {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0;
-  margin-bottom: 64px;
-  
-}
-
-
-.minigames-card {
-   display: flex;
-    gap: 32px;
-    width: 100%;
-   
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: column;
-}
-.minigames-card {
-  background-color: white;
-  border-radius: 30px;
-  overflow: hidden;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.minigames-card:hover {
-  transform: translateY(-5px);
-}
-
-.minigames-card img {
-  
-  height: auto; /* Сохраняем пропорции */
-  -o-object-fit: cover;
-     object-fit: cover;
-  flex-shrink: 0; /* Не сжимаем изображение */
-}
-
-.minigames-card.small {
-  height: 473px;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.minigames-card.large {
-  height: 512px;
-  display: flex;
-  flex-direction: row;
-}
-
-.minigames-title {
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0;
-  margin-top: 16px;
-  color: black;
-}
+}/*# sourceMappingURL=style.css.map */
