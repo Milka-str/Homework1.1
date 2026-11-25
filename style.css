@@ -17,6 +17,14 @@ body {
   flex-direction: column;
   width: 1440px;
   margin-top: auto;
+  padding-left: calc(50% - 600.5px);
+  padding-right: calc(50% - 600.5px);
+}
+
+
+.center {
+  
+  background-position: center;
 }
 
 /* Центральный блок */
@@ -199,7 +207,7 @@ border-width: 1px;
   background-color: #000;
   color: white;
   padding: 80px 120px;
-
+  position: relative;
  
  
 }
@@ -248,21 +256,19 @@ border-width: 1px;
 
 .games-star1 {
   position: absolute;
-  top: 877px;
+  top: 77px;
   left: 933px;
-  
-  
 }
 
 .games-star11 {
   position: absolute;
-  top: 1570px;
+  top: 676px;
   left: 25px;
 }
 
 .games-star12 {
   position: absolute;
-  top: 1622px;
+  top: 728px;
   left: 40px;
 }
 
@@ -291,12 +297,12 @@ border-width: 1px;
 
 
 .game-card.small {
-  height: 473px;
+  height: 512px;
   width: 378px;
 }
 
 .game-card.large {
-  height: 512px;
+  height: 551px;
   width: 378px;
 }
 
@@ -322,9 +328,11 @@ border-width: 1px;
   font-size: 32px;
   line-height: 100%;
   letter-spacing: 0;
-  margin-top: 16px;
+  
   color: black;
   padding: 8px 16px 10px 16px;
+  width: 314px;
+
 }
 
 /*Нижний блок: мини игры*/
